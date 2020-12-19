@@ -1,0 +1,448 @@
+/* this for fonts style */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Nunito', sans-serif;
+}
+/* Start with nav */
+nav{
+  background: #02215b;
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+.logo{
+  position: absolute;  
+  top: -16px;
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 80px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: initial;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+/* sidebar info */
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+    display: none;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+body > section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid #999;
+    color: #333;
+}
+
+/* container style */
+
+#pageContent {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+main {
+	float: left;
+    width: 60%;
+}
+article {
+    border-bottom: 2px dotted #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+article h2 {
+    font:1rem "Open Sans", sans-serif;
+    margin-bottom: 12px;
+    font-weight: bolder;
+    color: #02215b;
+}
+article p {
+    margin-bottom: 1.5em;
+    font-style: oblique;
+    color: #2a3040;
+}
+/* web page images */
+.img-container{
+    width: 23em;
+    height: 30em;
+    margin: 20px 20px 0 10px;
+    transition: 1s;
+}
+.free-img{
+    width: max-content;
+    height: max-content;
+    transition: none !important;
+}
+.img-container img{
+    width: 98%;
+    height: 98%;
+    margin: 1% 1%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+/* .img-container img :hover{ / if u want to add the animation stuf hhh I found it stupid
+    transform: scale(1.05);
+    border: 1px solid #02215bad;
+    border-radius: 5px;
+
+} */
+.product-description{
+    margin: 2% 5%;
+}
+/* sidebar 
+  
+   sidebar y can use it for ex form add img or video or for space for ads  
+
+*/
+aside {
+    height: max-content;
+    margin: 17% 0;
+	float: right;
+    width: 380px;
+    height: 200px;
+    margin-right: 1em;
+    border-radius: 4px;
+    background-color: #02215b;
+
+}
+aside div {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    transition: .5s ease-in-out;
+}
+aside div h2{
+    font: 1rem "Open Sans", sans-serif;
+    color: #1b9bff;
+    font-weight: bold;
+}
+aside div iframe{
+    width: 100%;
+    height: 100%;
+}
+/* 
+ 
+00000000000000000000000000000000000000000000000000000000
+              contact page style
+00000000000000000000000000000000000000000000000000000000
+
+*/
+h3{
+    font: 1.3rem "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #02215b;
+}
+.contact-in
+{
+	width: 80%;
+	height: auto;
+	margin: 5em auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map
+{
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+.contact-map iframe
+{
+	width: 100%;
+	height: 100%;
+}
+.contact-form
+{
+	width: 100%;
+	height: auto;
+	flex: 50%;
+	padding: 30px;
+	text-align: center;
+}
+.contact-form h1
+{
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: #02215b;
+}
+
+.contact-form-txt
+{
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 8px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.contact-form-txt::placeholder
+{
+	color: #aaa;
+}
+.contact-form-textarea
+{
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 8px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+.contact-form-textarea::placeholder
+{
+	color: #aaa;
+}
+
+.contact-form-btn
+{
+	width: 100%;
+	border:none;
+	outline: none;
+	border-radius: 8px;
+	background: #02215b;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 0;
+	cursor: pointer;
+	font-size: 18px;
+}
+/* 00000000000000000000000000000000000000000
+        table style
+0000000000000000000000000000000000000000000
+*/
+.heading-primary{
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 0;
+    color: #1a4eaf;
+}
+.table-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.table-img{
+    background: linear-gradient(to right, #02215b , #2a3040);
+    border-radius: 3px;
+    overflow: hidden;
+    width: 160px;
+    height: 100px;
+    margin: 5px auto;
+    background-size: cover;
+}
+.table-img img{
+    width: 100%;
+    height: 100%;
+}
+.table-section .table{
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 30px 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.6rem 1.6rem #b3b5c6;
+}
+.table-section .table .table-features .table-item{
+    padding: 15px 0;
+    border-bottom: 1px solid #1b9bff;
+}
+.table-section strong{
+    color: #02215b;
+    font-weight: 900;
+}
+.table-section .table .btn{
+    display: block;
+    background: linear-gradient(to right, #02215b , #2a3040);
+    color: #1b9bff;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+ .btn :hover{
+    background-color: #f6f6f6;
+    color: #2CBF9D;
+}
+/* footer */
+footer {
+    max-width: 1000px;
+    color: #ccc;
+	margin: auto;
+	clear: both;
+    text-align: center;
+    display: inline-flexbox;
+    background: linear-gradient(to right, #02215b , #2a3040);
+    border-radius: 4px;
+}
+footer p {
+    padding: 20px;
+}
+footer p a{
+    color: #1b9bff;
+    font: .8rem "Open Sans",sans-serif;
+    font-weight: bold;
+}
+address {
+    padding: 10px 20px 30px 10px;
+}
+address a{
+    color: #1b9bff;
+    font: .8rem "Open Sans",sans-serif;
+    font-weight: bold;
+}
+  /* 
+  
+  Media
+  
+  
+  */
+@media (min-width:954px) and (max-width: 990px){
+    aside{
+        width: 360px;
+        height: 180px;
+    }
+    nav ul li a{
+        color: #02215b;
+    }
+}
+@media (max-width: 952px){
+    nav ul li a{
+        color: #02215b;
+    }
+    aside{
+        float: none;
+        margin: auto;
+	    clear: both;
+        text-align: center;
+        display: flex;
+    }
+    main{
+        float: none;
+        margin: auto;
+	    clear: both;
+        text-align: center;
+        display: flex;
+    }
+    .img-container{
+        text-align: center;
+        display: grid;
+    }
+    .logo{
+      font-size: 30px;
+      padding-left: 20px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    #pageContent {
+        margin-left: 1em !important;
+    }
+}
+@media (max-width: 858px){
+    #pageContent{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    main{
+        margin: auto;
+	    clear: both;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+
+/* The last media if you want to remove the sidebar in the small screens */
+/* @media (max-width: 600px){
+    aside{
+        display: none;
+    }
+} */
+ 
+  
